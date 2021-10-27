@@ -7,3 +7,62 @@
 li {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 1250px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .order-state {
+        width: 100%;
+        &-list {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        &-item {
+            margin-right: 5%;
+        }
+    }
+    & .section_ticket {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 40px;
+        margin-bottom: 2%;
+        border: 2px solid lightgray;
+        &-info {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &-destination {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10%;
+            &_details {
+                display: flex;
+            }
+        }
+        &-price_options {
+            display: flex;
+        }
+    }
+}
+
+.map-marker, .section_ticket-download {
+    width: 50px;
+}
