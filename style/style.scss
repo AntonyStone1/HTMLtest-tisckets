@@ -23,6 +23,7 @@ a {
 }
 
 .order-state {
+    font-size: 0.8em;
     overflow: scroll;
     &::-webkit-scrollbar {
         width: 0;
@@ -34,7 +35,8 @@ a {
         min-width: 610px;
     }
     & .order-state-item {
-        vertical-align: baseline;
+        position: relative;
+        width: auto;
     }
     padding-top: 20px;
     & .order-previus {
@@ -43,10 +45,48 @@ a {
     & .order-current {
         font-size: 1.4em;
         font-weight: bold;
+        height: 18px;
+        vertical-align: baseline;
     }
     & .order-next {
         color: lightgray;
+        
     }
+    & .order-state-item span {
+        position: absolute;
+        display: inline-block;
+        padding-left: 10px;
+        width: 10px;
+        top: 50%;
+        right: -20px;
+        border-bottom: 2px solid black;
+    }
+    & .order-state-item span::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 8px;
+        top: -2px;
+        left: 4px;
+        transform: rotate(-135deg);
+        border-bottom: 2px solid black;
+    }
+    & .order-state-item span::after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 8px;
+        top: 2px;
+        left: 4px;
+        transform: rotate(-45deg);
+        border-bottom: 2px solid black;
+    }
+    &-list .order-next span, .order-current span,
+    .order-next span::after, .order-current span::after,
+    .order-next span::before, .order-current span::before{
+        border-color: lightgray;
+    }
+    
 }
 
 .main {
@@ -60,7 +100,6 @@ a {
             display: flex;
             justify-content: flex-start;
             width: 100%;
-            margin-bottom: 5%;
         }
         &-item {
             margin-right: 5%;
@@ -137,6 +176,7 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 30%;
             &_place {
                 padding-bottom: 20px;
             }         

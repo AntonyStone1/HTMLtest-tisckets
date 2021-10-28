@@ -58,6 +58,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 0;
   }
   .main .section_ticket-price_time {
     width: 100%;
@@ -92,7 +93,7 @@
   }
   .main .section_ticket .section_ticket-download .download-img {
     border: none;
-    width: 100px;
+    width: auto;
     height: auto;
     margin: 0 auto;
   }
