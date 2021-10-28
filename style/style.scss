@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', 'sans-serif';    
+}
 li {
     list-style-type: none;
 }
@@ -17,7 +20,33 @@ a {
     padding: 0 50px;
     margin: 0 auto;
     max-width: 1250px;
+}
 
+.order-state {
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    &-list {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        min-width: 610px;
+    }
+    & .order-state-item {
+        vertical-align: baseline;
+    }
+    padding-top: 20px;
+    & .order-previus {
+        font-weight: bold;
+    }
+    & .order-current {
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+    & .order-next {
+        color: lightgray;
+    }
 }
 
 .main {
@@ -41,28 +70,117 @@ a {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 20px 40px;
         margin-bottom: 2%;
         border: 2px solid lightgray;
+        & .map-marker {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            padding: 20px 20px 0 30px;
+            cursor: pointer;
+            & object {
+                width: 50px;
+            }
+        }
+        &-download {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            cursor: pointer;
+            & .download-img {
+                position: relative;                
+                width: 40px;
+                height: 40px;
+                margin: auto 0;
+                border: 3px solid blue;
+                cursor: pointer;
+                & span {
+                    position: absolute;
+                    width: 15px;
+                    border: 1px solid blue;
+                    top: 45%;
+                    right: 30%;
+                    transform: rotate(90deg);
+                    & p {
+                        display: none;
+                    }
+                }
+                & span::after{
+                    content: " ";
+                    position: absolute;
+                    width: 9px;
+                    border: 1px solid blue;
+                    top: -5px;
+                    right: -2px;
+                    transform: rotate(45deg);
+                }
+                & span::before{
+                    content: " ";
+                    position: absolute;
+                    width: 9px;
+                    border: 1px solid blue;
+                    top: 3px;
+                    left: 4px;
+                    transform: rotate(-45deg);
+                }
+                
+            }
+        }
         &-info {
             display: flex;
             justify-content: flex-start;
+            justify-content: space-between;
             width: 100%;
+            padding: 30px 0;
         }
         &-destination {
             display: flex;
             flex-direction: column;
-            margin-right: 10%;
+            justify-content: space-between;
+            &_place {
+                padding-bottom: 20px;
+            }         
             &_details {
                 display: flex;
+                justify-content: flex-start;
+                & p {
+                    margin-right: 20px;
+                    color: lightgray;
+                }
+                & a {
+                    color: blue;
+                }
             }
         }
-        &-price_options {
-            display: flex;
+    &-price {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        margin-right: 20%;
+        &_time {
+            font-size: 0.8em;
+            color: lightgray;
+            padding-bottom: 10px;
         }
+        &_options {
+            display: flex;
+            justify-content: space-between;
+            & .price_option-item {
+                width: 33.3%;
+                min-width: 90px;
+                margin-right: 20px;
+                &_term {
+                    
+                    padding-bottom: 10px;
+                }
+                &_cost {
+                    font-weight: bold;
+                    padding-left: 17px;
+                }
+            }            
+        }
+    }
+        
     }
 }
 
-.map-marker, .section_ticket-download {
-    width: 50px;
-}

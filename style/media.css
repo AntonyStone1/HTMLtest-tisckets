@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 890px) {
+  .section_ticket-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .section_ticket-price {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .main .section_ticket-price_time {
+    width: 100px;
+    margin-right: 5%;
+  }
+  .main .section_ticket-destination {
+    width: 100%;
+  }
+  .main .section_ticket-destination_details {
+    width: 40%;
+  }
+  .main .section_ticket-download .download-img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .main .section_ticket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px;
+    margin-bottom: 6%;
+  }
+  .main .section_ticket .map-marker {
+    padding: 0;
+  }
+  .main .section_ticket .map-marker object {
+    width: 40px;
+    height: 40px;
+  }
+  .main .section_ticket-info {
+    padding: 10px 0;
+  }
+  .main .section_ticket-destination_details {
+    width: 100%;
+  }
+  .main .section_ticket-price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .section_ticket-price_time {
+    width: 100%;
+  }
+  .main .section_ticket-price_options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .section_ticket-price_options .price_option-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .main .section_ticket-price_options .price_option-item:first-child {
+    border-top: 1px solid lightgray;
+  }
+  .main .section_ticket-price_options .price_option-item_term {
+    padding-bottom: 0;
+  }
+  .main .section_ticket .section_ticket-download {
+    padding: 0;
+    padding-top: 15px;
+  }
+  .main .section_ticket .section_ticket-download .download-img {
+    border: none;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .main .section_ticket .section_ticket-download .download-img span, .main .section_ticket .section_ticket-download .download-img span::after, .main .section_ticket .section_ticket-download .download-img span::before {
+    border: none;
+  }
+  .main .section_ticket .section_ticket-download .download-img span {
+    position: static !important;
+  }
+  .main .section_ticket .section_ticket-download .download-img span p {
+    display: block;
+    font-weight: bold;
+    color: blue;
+  }
+}
+/*# sourceMappingURL=media.css.map */
