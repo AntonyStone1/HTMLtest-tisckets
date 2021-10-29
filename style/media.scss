@@ -1,4 +1,34 @@
 @media screen and (max-width: 890px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+    .order-state {
+        & .order-state-list .order-state-item {
+            margin-right: 5.67%;
+            & span {
+                right: -26px;
+                transform: scale(0.8);
+            }
+        }
+        
+        & .order-previus, .order-next {
+            font-size: 16px;
+        }
+        & .order-current {
+            font-size: 24px;
+            line-height: 1.17;
+        } 
+    }
+    .main .section_ticket  {
+        & .map-marker {
+            padding-left: 20px;
+        }
+        & .section_ticket-price_options {
+            & .price_option-item_term {
+                padding-bottom: 5px;
+            }
+        }
+    }
     .section_ticket-info {
         flex-direction: column;
     }
@@ -8,16 +38,20 @@
         width: 100%;
         &_time {
             width: 100px;
-            margin-right: 5%;
+            margin-right: 6%;
         }
     }
     .main .section_ticket-destination {
-        width: 100%;
+        width: 85%;
+        &_place {
+            font-size: 16px;
+        }
         &_details {
             width: 40%;
         }
     }
     .main .section_ticket-download {
+        padding-top: 25px;
         & .download-img {
             margin: 0;
         }
@@ -29,20 +63,47 @@
     .wrapper {
         padding: 0 20px;
     }
-    
+    .order-state {
+        padding-bottom: 10px;
+        & .order-state-list .order-state-item {
+            margin-right: 4%;
+            & span {
+                right: -20px;
+                transform: scale(0.7);
+            }
+        }
+        
+        & .order-previus, .order-next {
+            font-size: 14px;
+        }
+        & .order-current {
+            font-size: 20px;
+            line-height: 1.17;
+        } 
+    }
     .main .section_ticket {
+        padding: 20px !important;        
         flex-direction: column;
         padding: 25px;
         margin-bottom: 6%;
         & .map-marker {            
             padding: 0;
+            padding-bottom: 10px;
             & object {
-                width: 40px;
-                height: 40px;
+                width: 34px;
+                height: 34px;
             } 
         }
         &-info {
-            padding: 10px 0;
+            padding-top: 0;
+            padding-bottom: 5px;
+        }
+        &-destination {
+            width: 100%;
+        }
+        &-destination_place {
+            font-size: 17px;
+            line-height: 1.33;
         }
         &-destination_details {
             width: 100%;
@@ -61,9 +122,9 @@
                     width: 100%;
                     padding: 10px 0;
                     margin: 0;
-                    border-bottom: 1px solid lightgray;
+                    border-bottom: 1px solid #e4e8f0;
                     &:first-child {
-                        border-top: 1px solid lightgray;
+                        border-top: 1px solid #e4e8f0;
                     }
                     &_term {
                         padding-bottom: 0;
@@ -87,8 +148,14 @@
                     position: static !important;
                     & p {
                         display: block;
-                        font-weight: bold;
-                        color: blue;
+                        font-size: 14px;
+                        font-weight: 900;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.43;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: #2c49c5;
                     }
                 }
             }

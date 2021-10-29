@@ -1,4 +1,28 @@
 @media screen and (max-width: 890px) {
+  .wrapper {
+    padding: 0 40px;
+  }
+  .order-state .order-state-list .order-state-item {
+    margin-right: 5.67%;
+  }
+  .order-state .order-state-list .order-state-item span {
+    right: -26px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .order-state .order-previus, .order-state .order-next {
+    font-size: 16px;
+  }
+  .order-state .order-current {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .main .section_ticket .map-marker {
+    padding-left: 20px;
+  }
+  .main .section_ticket .section_ticket-price_options .price_option-item_term {
+    padding-bottom: 5px;
+  }
   .section_ticket-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15,13 +39,19 @@
   }
   .main .section_ticket-price_time {
     width: 100px;
-    margin-right: 5%;
+    margin-right: 6%;
   }
   .main .section_ticket-destination {
-    width: 100%;
+    width: 85%;
+  }
+  .main .section_ticket-destination_place {
+    font-size: 16px;
   }
   .main .section_ticket-destination_details {
     width: 40%;
+  }
+  .main .section_ticket-download {
+    padding-top: 25px;
   }
   .main .section_ticket-download .download-img {
     margin: 0;
@@ -32,7 +62,26 @@
   .wrapper {
     padding: 0 20px;
   }
+  .order-state {
+    padding-bottom: 10px;
+  }
+  .order-state .order-state-list .order-state-item {
+    margin-right: 4%;
+  }
+  .order-state .order-state-list .order-state-item span {
+    right: -20px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .order-state .order-previus, .order-state .order-next {
+    font-size: 14px;
+  }
+  .order-state .order-current {
+    font-size: 20px;
+    line-height: 1.17;
+  }
   .main .section_ticket {
+    padding: 20px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -42,13 +91,22 @@
   }
   .main .section_ticket .map-marker {
     padding: 0;
+    padding-bottom: 10px;
   }
   .main .section_ticket .map-marker object {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
   }
   .main .section_ticket-info {
-    padding: 10px 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+  .main .section_ticket-destination {
+    width: 100%;
+  }
+  .main .section_ticket-destination_place {
+    font-size: 17px;
+    line-height: 1.33;
   }
   .main .section_ticket-destination_details {
     width: 100%;
@@ -79,10 +137,10 @@
     width: 100%;
     padding: 10px 0;
     margin: 0;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #e4e8f0;
   }
   .main .section_ticket-price_options .price_option-item:first-child {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #e4e8f0;
   }
   .main .section_ticket-price_options .price_option-item_term {
     padding-bottom: 0;
@@ -105,8 +163,14 @@
   }
   .main .section_ticket .section_ticket-download .download-img span p {
     display: block;
-    font-weight: bold;
-    color: blue;
+    font-size: 14px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #2c49c5;
   }
 }
 /*# sourceMappingURL=media.css.map */

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', 'sans-serif';
+  font-family: 'Lato', sans-serif;
 }
 
 li {
@@ -19,15 +19,15 @@ a {
 }
 
 .wrapper {
-  padding: 0 50px;
+  padding: 20px;
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: 1338px;
 }
 
 .order-state {
   font-size: 0.8em;
   overflow: scroll;
-  padding-top: 20px;
+  padding: 25px 0;
 }
 
 .order-state::-webkit-scrollbar {
@@ -51,27 +51,42 @@ a {
 }
 
 .order-state .order-previus {
+  font-size: 20px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #262e4f;
 }
 
 .order-state .order-current {
-  font-size: 1.4em;
+  font-size: 30px;
   font-weight: bold;
-  height: 18px;
-  vertical-align: baseline;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--dark-grey-blue);
 }
 
 .order-state .order-next {
-  color: lightgray;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #d4d5dc;
 }
 
 .order-state .order-state-item span {
   position: absolute;
   display: inline-block;
   padding-left: 10px;
-  width: 10px;
+  width: 16px;
   top: 50%;
-  right: -20px;
+  right: -35px;
   border-bottom: 2px solid black;
 }
 
@@ -79,9 +94,9 @@ a {
   content: ' ';
   display: block;
   position: absolute;
-  width: 8px;
-  top: -2px;
-  left: 4px;
+  width: 12px;
+  top: -4px;
+  left: 6px;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
   border-bottom: 2px solid black;
@@ -91,9 +106,9 @@ a {
   content: ' ';
   display: block;
   position: absolute;
-  width: 8px;
-  top: 2px;
-  left: 4px;
+  width: 12px;
+  top: 4px;
+  left: 6px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border-bottom: 2px solid black;
@@ -148,7 +163,7 @@ a {
           justify-content: space-between;
   width: 100%;
   margin-bottom: 2%;
-  border: 2px solid lightgray;
+  border: 2px solid #e4e8f0;
 }
 
 .main .section_ticket .map-marker {
@@ -185,14 +200,14 @@ a {
   width: 40px;
   height: 40px;
   margin: auto 0;
-  border: 3px solid blue;
+  border: 2px solid #2c49c5;
   cursor: pointer;
 }
 
 .main .section_ticket-download .download-img span {
   position: absolute;
   width: 15px;
-  border: 1px solid blue;
+  border: 1px solid #2c49c5;
   top: 45%;
   right: 30%;
   -webkit-transform: rotate(90deg);
@@ -207,7 +222,7 @@ a {
   content: " ";
   position: absolute;
   width: 9px;
-  border: 1px solid blue;
+  border: 1px solid #2c49c5;
   top: -5px;
   right: -2px;
   -webkit-transform: rotate(45deg);
@@ -218,7 +233,7 @@ a {
   content: " ";
   position: absolute;
   width: 9px;
-  border: 1px solid blue;
+  border: 1px solid #2c49c5;
   top: 3px;
   left: 4px;
   -webkit-transform: rotate(-45deg);
@@ -250,11 +265,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 28.7%;
 }
 
 .main .section_ticket-destination_place {
-  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #262e4f;
+  padding-bottom: 10px;
 }
 
 .main .section_ticket-destination_details {
@@ -267,12 +289,25 @@ a {
 }
 
 .main .section_ticket-destination_details p {
-  margin-right: 20px;
-  color: lightgray;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #9296a6;
+  padding-right: 20px;
 }
 
 .main .section_ticket-destination_details a {
-  color: blue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: #2c49c5;
 }
 
 .main .section_ticket-price {
@@ -288,8 +323,13 @@ a {
 }
 
 .main .section_ticket-price_time {
-  font-size: 0.8em;
-  color: lightgray;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+  color: #7d8295;
   padding-bottom: 10px;
 }
 
@@ -309,11 +349,30 @@ a {
 }
 
 .main .section_ticket-price_options .price_option-item_term {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #262e4f;
   padding-bottom: 10px;
 }
 
+.main .section_ticket-price_options .price_option-item_term label {
+  padding-left: 5px;
+}
+
 .main .section_ticket-price_options .price_option-item_cost {
-  font-weight: bold;
-  padding-left: 17px;
+  display: inline-block;
+  padding-left: 26px;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: #262e4f;
 }
 /*# sourceMappingURL=style.css.map */
